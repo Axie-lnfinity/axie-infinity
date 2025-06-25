@@ -1,0 +1,231 @@
+# Jekyll Configuration for Axie Infinity Offline Documentation
+
+# Site settings
+title: "Axie Infinity Offline Documentation"
+description: "Complete documentation for Axie Infinity Offline - Battle Simulator, Team Builder & Strategy Guide"
+baseurl: "/axie-infinity" # the subpath of your site, e.g. /blog
+url: "https://axie-lnfinity.github.io" # the base hostname & protocol for your site
+
+# SEO settings
+author: "Axie Infinity Offline Community"
+twitter:
+  username: AxieOffline
+  card: summary_large_image
+social:
+  name: Axie Infinity Offline
+  links:
+    - https://twitter.com/AxieOffline
+    - https://github.com/Axie-lnfinity/axie-infinity
+    - https://discord.gg/axie-offline
+
+# Repository information
+repository: "Axie-lnfinity/axie-infinity"
+github_username: Axie-lnfinity
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jekyll-paginate
+
+# kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  strategies:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Axie Infinity Offline Team"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "strategies"
+    values:
+      layout: "strategy"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Getting Started"
+    url: "/getting-started/"
+    subnav:
+      - title: "Installation"
+        url: "/installation/"
+      - title: "First Battle"
+        url: "/first-battle/"
+      - title: "Team Building"
+        url: "/team-building-basics/"
+  - title: "Battle System"
+    url: "/battle-guide/"
+    subnav:
+      - title: "Core Mechanics"
+        url: "/battle-mechanics/"
+      - title: "Card Effects"
+        url: "/card-effects/"
+      - title: "AI Opponents"
+        url: "/ai-guide/"
+  - title: "Team Builder"
+    url: "/team-building/"
+    subnav:
+      - title: "Axie Classes"
+        url: "/axie-classes/"
+      - title: "Synergies"
+        url: "/synergies/"
+      - title: "Meta Analysis"
+        url: "/meta-analysis/"
+  - title: "Strategies"
+    url: "/strategies/"
+    subnav:
+      - title: "Basic Strategies"
+        url: "/basic-strategies/"
+      - title: "Advanced Tactics"
+        url: "/advanced-tactics/"
+      - title: "Counter Strategies"
+        url: "/counters/"
+  - title: "Community"
+    url: "/community/"
+    subnav:
+      - title: "Discord"
+        url: "https://discord.gg/axie-offline"
+        external: true
+      - title: "Contributing"
+        url: "/contributing/"
+      - title: "Bug Reports"
+        url: "https://github.com/Axie-lnfinity/axie-infinity/issues"
+        external: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+
+# Include
+include:
+  - _pages
+  - _redirects
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Analytics
+google_analytics: UA-XXXXXXXX-X # Replace with actual tracking ID
+
+# Social sharing
+social_sharing:
+  twitter: true
+  facebook: true
+  linkedin: true
+  reddit: true
+  discord: true
+
+# Search
+search:
+  enabled: true
+  provider: lunr
+
+# Comments (if needed)
+comments:
+  provider: false # Can be enabled later with Disqus or similar
+
+# Reading time
+reading_time: true
+
+# Last modified
+last_modified_at: true
+
+# Future posts
+future: false
+
+# Timezone
+timezone: UTC
+
+# Image optimization
+image_processing:
+  quality: 85
+  progressive: true
+
+# Custom variables for the site
+custom:
+  version: "2.1.0"
+  discord_invite: "https://discord.gg/axie-offline"
+  github_repo: "https://github.com/Axie-lnfinity/axie-infinity"
+  download_url: "https://github.com/Axie-lnfinity/axie-infinity/releases"
+  project_type: "Gaming Tool"
+  
+# Keywords for SEO
+keywords:
+  - axie infinity offline
+  - axie infinity simulator
+  - axie infinity team builder
+  - axie infinity strategy
+  - axie infinity download
+  - axie infinity battle simulator
+  - axie infinity practice
+  - axie infinity free
+  - blockchain free axie
+  - offline gaming tool
+
+# Social media images
+defaults_image: "/assets/images/axie-infinity-social.png"
+logo: "/assets/images/axie-logo.png"
+
+# Performance
+sass:
+  style: compressed
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: development 

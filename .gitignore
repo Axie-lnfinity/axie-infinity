@@ -1,0 +1,314 @@
+# Axie Infinity Offline - .gitignore
+
+# ========================
+# SECURITY & CREDENTIALS
+# ========================
+.internal/GITHUB_CREDENTIALS.md
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*.pem
+credentials/
+secrets/
+
+# ========================
+# NODE.JS & NPM
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+yarn.lock
+package-lock.json
+
+# ========================
+# ELECTRON & BUILD
+# ========================
+dist/
+build/
+release/
+out/
+app/
+*.dmg
+*.exe
+*.AppImage
+*.deb
+*.rpm
+*.zip
+*.tar.gz
+
+# Electron builder outputs
+electron-builder-output/
+unpacked/
+
+# ========================
+# DEVELOPMENT
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# LOGS & DEBUGGING
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# ========================
+# GAME DATA & ASSETS
+# ========================
+# User save files
+saves/
+user-data/
+profiles/
+replays/
+
+# Large game assets (should be in LFS or CDN)
+assets/large/
+assets/videos/
+assets/music/
+*.wav
+*.mp3
+*.ogg
+*.webm
+*.mp4
+
+# Generated assets
+assets/generated/
+sprites/generated/
+textures/generated/
+
+# ========================
+# TEMPORARY FILES
+# ========================
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# ========================
+# PLATFORM SPECIFIC
+# ========================
+
+# Windows
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========================
+# TESTING & QA
+# ========================
+.nyc_output/
+coverage/
+test-results/
+screenshots/
+test-reports/
+
+# Jest
+jest-coverage/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# ========================
+# DOCUMENTATION BUILD
+# ========================
+docs/_build/
+docs/build/
+site/
+
+# ========================
+# BACKUP & ARCHIVES
+# ========================
+*.bak
+*.backup
+*.old
+backup/
+archive/
+
+# ========================
+# RUNTIME & CACHE
+# ========================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Webpack
+webpack-stats.json
+
+# ========================
+# DATABASE & DATA
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+database/
+db/
+
+# ========================
+# SYSTEM FILES
+# ========================
+# Internal system files that shouldn't be in public repo
+.internal/
+UNIVERSAL_SEO_TOOLKIT.md
+*_TEMPLATE.md
+*_CREDENTIALS.md
+*_SETUP.md
+*.prompt.md
+
+# Auto-generated or downloaded content
+auto-generated/
+downloaded/
+
+# ========================
+# GAME SPECIFIC
+# ========================
+# Battle replays (can be large)
+replays/*.replay
+battle-logs/
+
+# User configurations
+config/user/
+settings/user/
+
+# Cached game data
+cache/axies/
+cache/battles/
+cache/meta/
+
+# Generated team builds
+teams/exported/
+builds/shared/
+
+# Performance logs
+perf-logs/
+memory-dumps/
+
+# ========================
+# ANALYTICS & METRICS
+# ========================
+analytics/
+metrics/
+telemetry/
+usage-stats/
+
+# ========================
+# VERSION CONTROL
+# ========================
+.git/
+.gitattributes
+.gitmodules
+
+# ========================
+# EDITOR CONFIG
+# ========================
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# ========================
+# DEPLOYMENT
+# ========================
+deploy/
+staging/
+production/
+
+# Cloud storage sync files
+.dropbox
+.dropbox.attr
+.onedrive
+.gdrive
+
+# ========================
+# LICENSES & LEGAL
+# ========================
+# Keep license files visible
+!LICENSE
+!LICENSE.md
+!COPYING
+!COPYRIGHT
+
+# ========================
+# DOCUMENTATION
+# ========================
+# Keep important docs visible
+!README.md
+!CONTRIBUTING.md
+!CHANGELOG.md
+!CODE_OF_CONDUCT.md
+!SECURITY.md
+
+# ========================
+# GITHUB SPECIFIC
+# ========================
+# Keep GitHub templates visible
+!.github/
+.github/workflows/secrets/
+
+# ========================
+# FINAL EXCEPTIONS
+# ========================
+# Explicitly include certain files that might be ignored by patterns above
+!.github/ISSUE_TEMPLATE/
+!.github/PULL_REQUEST_TEMPLATE.md
+!docs/index.md
+!docs/_config.yml 
